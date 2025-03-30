@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">mobile_programming</string>
+    <string name="contact">Contact: </string>
+    <string name="yourName">Enter your name</string>
+    <string name="yourEmail">Enter your email</string>
+    <string name="yourPhone">Enter your phone</string>
+    <string name="yourPassword">Enter your password</string>
+    <string name="btn1">Cancel</string>
+    <string name="btn2">Submit</string>
+    <string name="na">Text field is empty</string>
+    <string name="first_row">First row</string>
+    <string name="second_row">Second row</string>
+    <string name="third_row">Third row</string>
+    <string name="text1">Text 1</string>
+    <string name="text2">Text 2</string>
+    <string name="text3">Text 3</string>
+    <string name="text4">Text 4</string>
+    <string name="full_name_hint">Enter Your Name</string>
+    <string name="formText">Form</string>
+    <string name="sportText">Which Sports do you like?</string>
+    <string name="genderText">Select your gender</string>
+    <string name="CountryText">Choose your Country</string>
+    <string name="football">FootBall</string>
+    <string name="volleyball">VolleyBall</string>
+    <string name="basketball">BasketBall</string>
+    <string name="badminton">Badminton</string>
+    <string name="maleText">Male</string>
+    <string name="female">Female</string>
+    <string name="image1">Image text</string>
+    <string name="about">About</string>
+    <string name="signInText">Sign In</string>
+    <string name="signUpText">Sign Up</string>
+    <string name="profile">Profile</string>
+    <string name="profile_icon_button">Profile Icon</string>
+    <string name="gender">Gender</string>
+    <string name="country">Country</string>
+    <string name="sports">Sports</string>
+    <string name="go_back">GO back</string>
+    <string name="dialog">Dialog</string>
+    <string name="name">Name</string>
+    <string name="welcome">Welcome, Nitesh</string>
+    <string name="headphone_image">headphone_image</string>
+    <string name="activity">Activity</string>
+    <string name="images">Image</string>
+    <string name="star_emoji">⭐</string>
+    <string name="switcher">Switcher</string>
+    <string name="fragment_one">Fragment One</string>
+    <string name="cross">❌</string>
+    <string name="fragment_two">Fragment Two</string>
+    <string name="pageNotFound">Page Not Found</string>
+    <string name="logo">Logo</string>
+
+    <string-array name="country_list">
+        <item>Nepal</item>
+        <item>China</item>
+        <item>Japan</item>
+        <item>Australia</item>
+        <item>Bhutan</item>
+        <item>Korea</item>
+    </string-array>
+
+
+</resources>

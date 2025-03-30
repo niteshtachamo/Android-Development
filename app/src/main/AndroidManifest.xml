@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/play_store"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mobile_programming"
+        tools:targetApi="31">
+
+<!--        android:name=".unit_2.Hello-->
+<!--        android:name=".unit_3.Columns"-->
+<!--        android:name=".unit_3.constraint"-->
+
+        <activity
+            android:name=".unit_3.Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".unit_3.SignUp"/>
+        <activity android:name=".unit_4.About"/>
+        <activity android:name=".unit_2.Hello"/>
+        <activity android:name=".unit_4.Contact"/>
+        <activity android:name=".unit_4.Home"/>
+        <activity android:name=".unit_5.FragmentSwitchActivity"/>
+        <activity android:name=".unit_5.ImageFragmentActivity"/>
+
+    </application>
+
+</manifest>
