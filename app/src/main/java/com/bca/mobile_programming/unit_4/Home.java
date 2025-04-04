@@ -1,5 +1,6 @@
 package com.bca.mobile_programming.unit_4;
 
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
@@ -9,13 +10,16 @@ import android.text.SpannableString;
 import android.text.style.AbsoluteSizeSpan;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.LeadingMarginSpan;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.PopupMenu;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -24,6 +28,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.bca.mobile_programming.R;
+import com.bca.mobile_programming.unit_1.GenerelUtil;
 import com.bca.mobile_programming.unit_5.FragmentSwitchActivity;
 import com.bca.mobile_programming.unit_5.ImageFragmentActivity;
 import com.bca.mobile_programming.unit_5.ListViewMain;
@@ -66,8 +71,9 @@ public class Home extends AppCompatActivity {
 
         setContentView(R.layout.unit_4_home);
 
+        rootLayout =findViewById(R.id.homeRoot);
         Button activityButton = findViewById(R.id.homeActivityButton);
-        Button dialogButton = findViewById(R.id.homeDialogButton);
+        dashButton  = findViewById(R.id.homeDashButton);
         Button fragmentButtonImage = findViewById(R.id.homeFragmentButtonImage);
         Button fragmentButtonSwitcher = findViewById(R.id.homeFragmentButtonSwitcher);
 
@@ -81,14 +87,64 @@ public class Home extends AppCompatActivity {
             startActivity(i);
         });
 
-        dialogButton.setOnClickListener(v-> {
-            Toast.makeText(getApplicationContext(), "Dialog button is click", Toast.LENGTH_SHORT).show();
+        dashButton.setOnClickListener(V ->{
+            PopupMenu popup = new PopupMenu(Home.this, V);
+            popup.getMenuInflater().inflate(R.menu.popup_option, popup.getMenu());
+
+            popup.setOnMenuItemClickListener(item -> {
+                String close = "Bye";
+                int selectedItem = item.getItemId();
+
+                if(selectedItem == R.id.popupOptionsProfile){
+//                    Intent i = new Intent(Home.this, UserProfileMain.class);
+//                    startActivity(i);
+                    GenerelUtil.showMySnack(rootLayout, "Profile", close);
+                    return true;
+                } else if(selectedItem == R.id.popupOptionServices){
+//                    Intent i = new Intent(Home.this, UserService.class);
+//                    startActivity(i);
+                    GenerelUtil.showMySnack(rootLayout, "Service", close);
+                    return true;
+                } else if(selectedItem == R.id.popupOptionProfileService){
+//                    Intent i = new Intent(Home.this, UserProfileService.class);
+//                    startActivity(i);
+                    GenerelUtil.showMySnack(rootLayout, "Profile Service", close);
+                    return true;
+                } else if(selectedItem == R.id.popupOptionMap){
+//                    Intent i = new Intent(Home.this, UserMap.class);
+//                    startActivity(i);
+                    GenerelUtil.showMySnack(rootLayout, "Map", close);
+                    return true;
+                }
+
+                return false;
+            });
+
+            popup.show();
         });
+
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        getMenuInflater().inflate(R.menu.context_menu_option,menu);
+    }
+
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        return super.onContextItemSelected(item);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        registerForContextMenu(dashButton);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.app_options, menu);
+        getMenuInflater().inflate(R.menu.app_option, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -121,6 +177,7 @@ public class Home extends AppCompatActivity {
 //            Intent i = new Intent(Home.this, Logout.class);
 //            startActivity(i);
             Toast.makeText(this, "Log Out", Toast.LENGTH_SHORT).show();
+            GenerelUtil.showMySnack(rootLayout,"this is my logout",close);
             return true;
         } else if(selectedItem == R.id.appOptionsSetting){
 //            Intent i = new Intent(Home.this, Setting.class);

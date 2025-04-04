@@ -17,17 +17,17 @@
 <!--        android:name=".unit_3.Columns"-->
 <!--        android:name=".unit_3.constraint"-->
 
-<!--        <activity-->
-<!--            android:name=".unit_3.Login"-->
-<!--            android:exported="true">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN"/>-->
-<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
+        <activity
+            android:name=".unit_3.Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
 
 
-        <activity android:name=".unit_3.Login"/>
+<!--        <activity android:name=".unit_3.Login"/>-->
         <activity android:name=".unit_3.SignUp"/>
         <activity android:name=".unit_4.About"/>
         <activity android:name=".unit_2.Hello"/>
