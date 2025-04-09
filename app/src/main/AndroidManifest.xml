@@ -31,11 +31,16 @@
         <activity android:name=".unit_3.SignUp"/>
         <activity android:name=".unit_4.About"/>
         <activity android:name=".unit_2.Hello"/>
-        <activity android:name=".unit_4.Contact"/>
+        <activity
+            android:theme="@style/ActivityAsDialogue"
+            android:name=".unit_4.Contact"/>
+
         <activity android:name=".unit_4.Home"/>
         <activity android:name=".unit_5.FragmentSwitchActivity"/>
         <activity android:name=".unit_5.ImageFragmentActivity"/>
 
+
+        <activity android:name=".unit_6.ListViewMain"/>
 
     </application>
 

@@ -28,10 +28,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.bca.mobile_programming.R;
+import com.bca.mobile_programming.unit_1.AlertUtil;
 import com.bca.mobile_programming.unit_1.GenerelUtil;
 import com.bca.mobile_programming.unit_5.FragmentSwitchActivity;
 import com.bca.mobile_programming.unit_5.ImageFragmentActivity;
-import com.bca.mobile_programming.unit_5.ListViewMain;
+import com.bca.mobile_programming.unit_6.ListViewMain;
 
 public class Home extends AppCompatActivity {
 
@@ -74,6 +75,7 @@ public class Home extends AppCompatActivity {
         rootLayout =findViewById(R.id.homeRoot);
         Button activityButton = findViewById(R.id.homeActivityButton);
         dashButton  = findViewById(R.id.homeDashButton);
+        Button dialogButton =findViewById(R.id.homeDialogButton);
         Button fragmentButtonImage = findViewById(R.id.homeFragmentButtonImage);
         Button fragmentButtonSwitcher = findViewById(R.id.homeFragmentButtonSwitcher);
 
@@ -86,6 +88,22 @@ public class Home extends AppCompatActivity {
             Intent i = new Intent(Home.this, ImageFragmentActivity.class);
             startActivity(i);
         });
+
+        activityButton.setOnClickListener(v->{
+           Intent i =new Intent(Home.this,Contact.class);
+           startActivity(i);
+        });
+
+        dialogButton.setOnClickListener(v->{
+            AlertUtil alert =new AlertUtil(this,rootLayout);
+            alert.show(getSupportFragmentManager(),"alert");
+        });
+
+        fragmentButtonImage.setOnClickListener(v->{
+            Intent i =new Intent(Home.this,ImageFragmentActivity.class);
+            startActivity(i);
+        });
+
 
         dashButton.setOnClickListener(V ->{
             PopupMenu popup = new PopupMenu(Home.this, V);
@@ -123,6 +141,7 @@ public class Home extends AppCompatActivity {
             popup.show();
         });
 
+
     }
 
     @Override
@@ -154,9 +173,9 @@ public class Home extends AppCompatActivity {
         int selectedItem = item.getItemId();
 
         if(selectedItem == R.id.appOptionsListView){
-//            Intent i = new Intent(Home.this, ListViewMain.class);
-//            startActivity(i);
-            Toast.makeText(this, "List View", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(Home.this, ListViewMain.class);
+            startActivity(i);
+//            Toast.makeText(this, "List View", Toast.LENGTH_SHORT).show();
             return true;
         } else if(selectedItem == R.id.appOptionsCustomListView){
 //            Intent i = new Intent(Home.this, CustomListViewMain.class);

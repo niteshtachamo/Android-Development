@@ -63,17 +63,14 @@
     <string name="details">Details</string>
     <string name="show_less">Show Less</string>
     <string name="not_interested">Not Interested</string>
+    <string name="no">no</string>
 
-
-
-
-
-
-
-
-
-
-
+    <string name="yes">yes</string>
+    <string name="positive">Positive</string>
+    <string name="negative">Negative</string>
+    <string name="alert_title">Alert Title</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="alert_message">Message Alert!!</string>
 
 
     <string-array name="country_list">
@@ -84,6 +81,41 @@
         <item>Bhutan</item>
         <item>Korea</item>
     </string-array>
+
+    <string-array name="pokemon_list">
+        <item>Pikachu</item>
+        <item>Gengar</item>
+        <item>Raichu</item>
+        <item>Bulbasaur</item>
+        <item>Charizard</item>
+        <item>Greninja</item>
+        <item>Squirtle</item>
+        <item>Lucario</item>
+        <item>Snorlax</item>
+        <item>Eevee</item>
+        <item>Jigglypuff</item>
+        <item>Meowth</item>
+        <item>Machamp</item>
+        <item>Gyarados</item>
+        <item>Dragonite</item>
+        <item>Blaziken</item>
+        <item>Mewtwo</item>
+        <item>Zapdos</item>
+        <item>Scizor</item>
+        <item>Alakazam</item>
+        <item>Infernape</item>
+        <item>Lucario</item>
+        <item>Arcanine</item>
+        <item>Typhlosion</item>
+        <item>Tyranitar</item>
+        <item>Metagross</item>
+        <item>Gallade</item>
+        <item>Salamence</item>
+        <item>Decidueye</item>
+        <item>Cinderace</item>
+    </string-array>
+
+
 
 
 </resources>

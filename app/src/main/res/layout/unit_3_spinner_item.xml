@@ -6,7 +6,7 @@
     android:paddingVertical="15dp"
     android:text="N/A"
     android:textAlignment="textStart"
-    android:textColor="@color/gray"
-    android:textSize="20sp"
+    android:textColor="@color/black"
+    android:textSize="24sp"
     android:textStyle="bold|italic"
     />
