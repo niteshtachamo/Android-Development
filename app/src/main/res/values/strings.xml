@@ -71,6 +71,14 @@
     <string name="alert_title">Alert Title</string>
     <string name="dismiss">Dismiss</string>
     <string name="alert_message">Message Alert!!</string>
+    <string name="description1">This is the description of the pokemon of pikachu.</string>
+    <string name="choose">Choose</string>
+    <string name="list_item_title">List Item Title</string>
+    <string name="list_item_description">List Item Description</string>
+    <string name="custom_grid_view">Custom Grid View</string>
+
+
+
 
 
     <string-array name="country_list">
@@ -93,28 +101,35 @@
         <item>Lucario</item>
         <item>Snorlax</item>
         <item>Eevee</item>
-        <item>Jigglypuff</item>
-        <item>Meowth</item>
-        <item>Machamp</item>
-        <item>Gyarados</item>
-        <item>Dragonite</item>
-        <item>Blaziken</item>
-        <item>Mewtwo</item>
-        <item>Zapdos</item>
-        <item>Scizor</item>
-        <item>Alakazam</item>
-        <item>Infernape</item>
-        <item>Lucario</item>
-        <item>Arcanine</item>
-        <item>Typhlosion</item>
-        <item>Tyranitar</item>
-        <item>Metagross</item>
-        <item>Gallade</item>
-        <item>Salamence</item>
-        <item>Decidueye</item>
-        <item>Cinderace</item>
+
+
     </string-array>
 
+    <string-array name="pokemon_descriptions">
+        <item>Electric mouse Pokémon known for shocking speed and cute appearance.</item>
+        <item>Shadowy ghost with mischievous grin and deadly poisonous touch.</item>
+        <item>Pikachu’s evolved form, powerful electric tail delivers shocking strikes.</item>
+        <item>Grass-starter with plant bulb growing stronger as it evolves.</item>
+        <item>Fire-breathing dragon with fiery wings and fierce battle presence.</item>
+        <item>Ninja-like water Pokémon, fast, stealthy, uses water shurikens.</item>
+        <item>Adorable turtle Pokémon sprays water from shell to defend.</item>
+        <item>Aura-sensing fighter with steel punches and strong battle instincts.</item>
+        <item>Massive, sleepy giant that blocks paths and absorbs hits.</item>
+        <item>Adaptable evolution Pokémon with many elemental transformation options.</item>
+    </string-array>
+
+    <string-array name="pokemon_images">
+        <item>@drawable/pikachu</item>
+        <item>@drawable/gengar</item>
+        <item>@drawable/raichu</item>
+        <item>@drawable/bulbasaur</item>
+        <item>@drawable/charizard</item>
+        <item>@drawable/greninja</item>
+        <item>@drawable/squirtle</item>
+        <item>@drawable/lucario</item>
+        <item>@drawable/snorlax</item>
+        <item>@drawable/eevee</item>
+    </string-array>
 
 
 
